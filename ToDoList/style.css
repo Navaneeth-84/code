@@ -1,5 +1,6 @@
 body{
 background-color: dimgray;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .box{
     width:440px;
@@ -7,8 +8,15 @@ background-color: dimgray;
     background: black;
     margin-left: 100px;
     margin-top: 100px;
-    color: aliceblue;
+    color:aliceblue;
+    text-align-last: center;
 }
 .list{
     color: aquamarine;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: floralwhite;
 }
