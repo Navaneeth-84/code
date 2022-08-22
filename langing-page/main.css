@@ -5,28 +5,33 @@
   background-color: rgba(110, 117, 116, 0.862);
   background-blend-mode: soft-light;
   height: 100%;
-  transition-duration: 300ms;
+  /* transition-duration: 300ms; */
+  transition: 300ms ease-in;
   color: white;
 }
 
-.dark{
+html * {
+  text-decoration: none;
+  font-family: "Alumni Sans Pinstripe";
+}
+
+.dark {
   background-color: rgba(5, 5, 5, 0.781);
   transition-duration: 300ms;
   color: white;
 }
 
 a {
-  font-family: "Alumni Sans Pinstripe";
   font-weight: bold;
   font-size: 18px;
   color: aliceblue;
-  text-decoration: none;
+  /* text-decoration: none; */
   padding: 5px 70px 5px;
   border-radius: 15px;
   background-color: rgba(54, 45, 172, 0.397);
   background-blend-mode: light;
   letter-spacing: 2px;
-  transition-duration: 200ms;
+  transition: 200ms ease-in;
 }
 
 body,
@@ -36,7 +41,6 @@ html {
 }
 
 .description {
-  font-family: "Alumni Sans Pinstripe";
   font-size: 50px;
   text-align: center;
   padding: 150px 150px 200px;
@@ -69,12 +73,12 @@ html {
   flex: 1;
 }
 
-.logo {
+/* .logo {
   background: url("resources/icon.png") no-repeat top;
   background-size: contain;
   width: 80px;
   height: 80px;
-}
+} */
 
 .links > div {
   padding-left: 20px;
@@ -92,7 +96,7 @@ a:hover {
   padding: 5px 67.5px 5px;
 }
 
-.btn{
+.btn {
   text-align: center;
 }
 
@@ -107,14 +111,14 @@ a:hover {
   text-transform: uppercase;
   font-weight: bolder;
   letter-spacing: 3px;
-  transition-duration: 200ms;
+  transition: 300ms;
   border-radius: 5px;
   width: 220px;
 }
 
-#changeTheme:hover{
+#changeTheme:hover {
   letter-spacing: 4px;
-  transition-duration: 500ms;
+  transition-duration: 300ms;
   background-color: #12f8f8d7;
   border-width: 3px;
   border-color: rgba(255, 28, 70, 0.364);
