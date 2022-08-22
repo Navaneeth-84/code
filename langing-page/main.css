@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Rubik+Marker+Hatch&display=swap");
+.bg {
+  background: url("resources/bg.jpeg") center no-repeat;
+  background-size: cover;
+  background-color: rgba(110, 117, 116, 0.862);
+  background-blend-mode: soft-light;
+  height: 100%;
+  /* transition-duration: 300ms; */
+  transition: 300ms ease-in;
+  color: white;
+}
+
+html * {
+  text-decoration: none;
+  font-family: "Alumni Sans Pinstripe";
+}
+
+.dark {
+  background-color: rgba(5, 5, 5, 0.781);
+  transition-duration: 300ms;
+  color: white;
+}
+
+a {
+  font-weight: bold;
+  font-size: 18px;
+  color: aliceblue;
+  /* text-decoration: none; */
+  padding: 5px 70px 5px;
+  border-radius: 15px;
+  background-color: rgba(54, 45, 172, 0.397);
+  background-blend-mode: light;
+  letter-spacing: 2px;
+  transition: 200ms ease-in;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.description {
+  font-size: 50px;
+  text-align: center;
+  padding: 150px 150px 200px;
+  height: 80px;
+}
+
+.logoname {
+  font-family: "Alumni Sans Pinstripe";
+  font-weight: bold;
+  font-size: 29px;
+  letter-spacing: 3px;
+  text-align: left;
+  width: 10px;
+  padding: 5px;
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+
+.navbar > div {
+  display: flex;
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+
+/* .logo {
+  background: url("resources/icon.png") no-repeat top;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+} */
+
+.links > div {
+  padding-left: 20px;
+  padding-top: 25px;
+  text-align: center;
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+
+a:hover {
+  background-color: rgba(204, 245, 23, 0.397);
+  transition-duration: 300ms;
+  letter-spacing: 3.1px;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  padding: 5px 67.5px 5px;
+}
+
+.btn {
+  text-align: center;
+}
+
+#changeTheme {
+  text-align: center;
+  background-color: #1ebbcf9a;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  transition: 300ms;
+  border-radius: 5px;
+  width: 220px;
+}
+
+#changeTheme:hover {
+  letter-spacing: 4px;
+  transition-duration: 300ms;
+  background-color: #12f8f8d7;
+  border-width: 3px;
+  border-color: rgba(255, 28, 70, 0.364);
+}
