@@ -1,0 +1,28 @@
+html * {
+  background-color: rgb(248, 69, 69);
+  font-size: 30px;
+}
+
+.icon {
+  background-color: white;
+  padding: 15px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+input {
+  border: 0;
+  background: rgb(249, 194, 194);
+  outline: 0;
+  padding: 12.8px;
+  display: block;
+}
+
+.inpstyle {
+  display: none;
+}
