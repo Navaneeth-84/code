@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  font-size: 30px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  padding: 0;
+  height: 80vh;
+}
+.key {
+  background-color: rgba(255, 255, 255, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.225);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 35px;
+}
+
+.result {
+  height: 15vh;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 5vh;
+}
+
+.key:hover{
+    background:gray;
+    transition: 100ms ease-in-out;
+}
+
+#del, #cal
+{
+    background: yellow;
+}
+
+#cls{
+    background: rgba(69, 8, 255, 0.756);
+}
