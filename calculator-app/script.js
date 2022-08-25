@@ -99,7 +99,7 @@ function precedenceInput(symbol) {
 }
 
 // handling when input is '0'
-function inputZero(symbol) {
+function zeroInput(symbol) {
   inp.innerHTML += symbol; // TBI
 }
 
