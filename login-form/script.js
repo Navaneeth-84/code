@@ -3,10 +3,10 @@ function validateFieldsNotEmpty() {
   const uname = document.querySelector(".username").value;
   const pwd = document.querySelector(".password").value;
 
-  if (uname.length == 0) {
+  if (uname.length === 0) {
     errorAlert("username field cannot be empty", ".uname");
   }
-  if (pwd.length == 0) {
+  if (pwd.length === 0) {
     errorAlert("password cannot be empty", ".pwd");
   }
   if (uname.length != 0 && pwd.length != 0) {
@@ -28,41 +28,31 @@ function resetAlerts() {
 }
 
 function validateCredentials(uname, pwd) {
-  const isValidUsername = false;
-  const isValidPassword = false;
+  let isValidUsername = false;
+  let isValidPassword = false;
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(uname)) {
     isValidUsername = true;
   }
 
-  const hasLower = false;
-  const hasUpper = false;
-  const hasSpecial = false;
-  const hasNumber = false;
-  const hasMinLength = false;
-
-  if (pwd.length >= 8) {
-    hasMinLength = true;
-  }
-  if (/[a-z]/.test(pwd)) {
-    hasLower = true;
-  }
-  if (/[A-Z]/.test(pwd)) {
-    hasUpper = true;
-  }
-  const splChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-  if (splChars.test(pwd)) {
-    hasSpecial = true;
-  }
-  if (/[0-9]/.test(pwd)) {
-    hasNumber = true;
-  }
-
-  if (hasLower && hasUpper && hasSpecial && hasNumber && hasMinLength) {
+  if (
+    pwd.length >= 8 &&
+    /[a-z]/.test(pwd) &&
+    /[A-Z]/.test(pwd) &&
+    /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(pwd) &&
+    /[0-9]/.test(pwd)
+  ) {
     isValidPassword = true;
   }
 
-  if (!isValidPassword && !isValidUsername) {
+  if (isValidPassword == false && isValidUsername == false) {
     errorAlert("invalid username", ".uname");
     errorAlert("invalid password", ".pwd");
+  } else if (isValidPassword == true && isValidUsername == true) {
+    alert("valid username and pass");
   }
 }
+
+
+
+
+// == vs ===
