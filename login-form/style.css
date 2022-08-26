@@ -6,22 +6,22 @@
   margin: 0;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   flex-direction: column;
   background: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
 .login-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   min-width: 340px;
   height: 400px;
