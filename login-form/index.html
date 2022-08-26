@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-form">
+        <div class="element">
+          <div>username</div>
+          <div><input type="email" class="username" /></div>
+          <div class="msgArea uname"></div>
+        </div>
+        <div class="element">
+          password
+          <div><input type="password" class="password" /></div>
+          <div class="pwd"></div>
+          <div class="msgArea pwd"></div>
+        </div>
+        <div class="element">
+          <button class="login-btn" onclick="validateFieldsNotEmpty()">
+            login
+          </button>
+        </div>
+      </div>
+      <div class="msgArea pwdRules"></div>
+    </div>
+  </body>
+</html>
