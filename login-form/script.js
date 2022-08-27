@@ -1,4 +1,7 @@
+const loginButton = document.querySelector(".loginbtn");
+loginButton.addEventListener("click", validateCredentials);
 function validateFieldsNotEmpty() {
+  console.log("clicked");
   resetAlerts();
   const uname = document.querySelector(".username").value;
   const pwd = document.querySelector(".password").value;
