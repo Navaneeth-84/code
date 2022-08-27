@@ -9,26 +9,29 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="container flex">
-      <div class="login-form flex">
-        <div class="element">
-          <div>username</div>
-          <div><input type="email" class="username" /></div>
-          <div class="msgArea uname"></div>
+    <div class="container flexcol">
+      <div class="loginform flexcol">
+        <div class="heading">Amplify</div>
+        <div class="fields desc">
+          <div class="uname">
+            <div><label>Username or Email</label></div>
+            <div><input type="text" class="username" /></div>
+            <div class="msgArea email"> </div>
+          </div>
+          <div class="passwd">
+            <div><label>Password</label></div>
+            <div><input type="password" class="password" /></div>
+            <div class="msgArea pwd"> </div>
+          </div>
+          <div class="forgot desc">
+            <div><a href="#">Forgotten Password?</a></div>
+          </div>
         </div>
-        <div class="element">
-          password
-          <div><input type="password" class="password" /></div>
-
-          <div class="msgArea pwd"></div>
-        </div>
-        <div class="element">
-          <button class="login-btn" onclick="validateFieldsNotEmpty()">
-            login
-          </button>
+        <div class="actions flexrow desc">
+          <div class="check"><input type="checkbox"/> Remember Me</div>
+          <div class="btn"><button class="loginbtn" onclick="validateFieldsNotEmpty()">LOG IN</button></div>
         </div>
       </div>
-      <div class="msgArea pwdRules"></div>
     </div>
   </body>
 </html>

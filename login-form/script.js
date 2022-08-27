@@ -4,7 +4,7 @@ function validateFieldsNotEmpty() {
   const pwd = document.querySelector(".password").value;
 
   if (uname.length === 0) {
-    errorAlert("username field cannot be empty", ".uname");
+    errorAlert("username field cannot be empty", ".email");
   }
   if (pwd.length === 0) {
     errorAlert("password cannot be empty", ".pwd");
@@ -45,14 +45,15 @@ function validateCredentials(uname, pwd) {
   }
 
   if (isValidPassword == false && isValidUsername == false) {
-    errorAlert("invalid username", ".uname");
+    errorAlert("invalid username", ".email");
     errorAlert("invalid password", ".pwd");
   } else if (isValidPassword == true && isValidUsername == true) {
-    alert("valid username and pass");
+    alert("valid username and password");
+  } else if (!isValidUsername) {
+    errorAlert("invalid username", ".email");
+  } else if (!isValidPassword) {
+    errorAlert("invalid password", ".pwd");
   }
 }
-
-
-
 
 // == vs ===
