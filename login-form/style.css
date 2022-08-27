@@ -9,7 +9,7 @@
 }
 
 .container {
-  background: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg");
+  background: url("https://cdn.99images.com/photos/wallpapers/nature-landscapes/beach-sunset%20android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-0ed59.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,7 @@ input[type="password"] {
   box-shadow: 1px 1px 1px rgb(191, 191, 241);
 }
 
-.desc{
+.desc {
   font-size: 14px;
   color: #b0b0b0;
 }
@@ -59,14 +59,14 @@ input[type="password"] {
   font-family: "Courgette", cursive;
 }
 
-.msgArea{
-  height:20px;
+.msgArea {
+  height: 20px;
   color: red;
   font-weight: normal;
   font-size: 12px;
 }
 
-.actions{
+.actions {
   margin-top: 30px;
 }
 
@@ -77,8 +77,8 @@ input[type="password"] {
   width: 70%;
 }
 
-.forgot{
-  margin-top:5px;
+.forgot {
+  margin-top: 5px;
 }
 
 .btn {
