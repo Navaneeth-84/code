@@ -1,0 +1,29 @@
+*{
+    margin:0;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    height:10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs > div{
+    margin: 5px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.block{
+    font-size: 25px;
+    border: 0.5px solid black;
+    text-align: center;
+    padding:50px;
+}
