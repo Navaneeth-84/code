@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  user-select: none;
+  /* border: 1px solid red; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #cbd5e5;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+li {
+  padding: 5px;
+}
+.quiz {
+  height: fit-content;
+  width: 480px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 20px 20px 100px rgb(182, 181, 181);
+  padding-top: 35px;
+}
+
+.question {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.options {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.quiz {
+  border-radius: 15px;
+}
+
+#submit {
+  width: 100%;
+  border: 0;
+  border-radius: 0px 0px 15px 15px;
+  cursor: pointer;
+  padding: 20px;
+  background-color: #8e44ad;
+  color: white;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: #753a8f;
+}
