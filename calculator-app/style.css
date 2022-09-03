@@ -1,0 +1,41 @@
+*{
+  font-size: 8vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#r1,#r2,#r3,#r4,#r5{
+  display: flex;
+  align-items: center;
+  height: 20%;
+}
+
+.container{
+  height: 100vh;
+}
+
+.buttons{
+  height: 80%;
+  width: 100%;
+}
+
+.inout{
+  display: flex;
+  height: 20%;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+
+.key{
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  width: 25%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
