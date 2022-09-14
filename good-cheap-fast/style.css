@@ -1,0 +1,17 @@
+body {
+  font-size: 25px;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radios {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 20px;
+}
