@@ -1,12 +1,28 @@
-var elems = document.querySelectorAll("input[type='checkbox']");
+const good = document.querySelector(".good");
+const cheap = document.querySelector(".cheap");
+const fast = document.querySelector(".fast");
 
-elems.forEach((element) => {
-  element.addEventListener("click", function () {
-    let good = elems[0].checked;
-    let cheap = elems[1].checked;
-    let fast = elems[2].checked;
-    if (good && cheap) elems[2].checked = false;
-    else if (good && fast) elems[1].checked = false;
-    else if (fast && cheap) elems[0].cheked = false;
-  });
+const arr = [good, cheap, fast];
+
+arr.forEach(elem => {
+    elem.addEventListener('click',function(){
+        if(elem==good)
+        {
+            if(cheap.checked && fast.checked){
+                fast.checked = false;
+            }
+        }
+        else if(elem==cheap)
+        {
+            if(good.checked && fast.checked){
+                good.checked = false;
+            }
+        }
+        else if(elem==fast)
+        {
+            if(good.checked && cheap.checked){
+                cheap.checked = false;
+            }
+        }
+    })
 });
