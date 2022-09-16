@@ -8,6 +8,7 @@
   /* transition-duration: 300ms; */
   transition: 300ms ease-in;
   color: white;
+  margin:0;
 }
 
 html * {
@@ -63,29 +64,17 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
-  -ms-flex: 1; /* IE 10 */
-  flex: 1;
 }
 
-.navbar > div {
+.navbar > div{
   display: flex;
-  -ms-flex: 1; /* IE 10 */
-  flex: 1;
 }
 
-/* .logo {
-  background: url("resources/icon.png") no-repeat top;
-  background-size: contain;
-  width: 80px;
-  height: 80px;
-} */
 
 .links > div {
-  padding-left: 20px;
-  padding-top: 25px;
+  padding: 5px;
   text-align: center;
-  -ms-flex: 1; /* IE 10 */
-  flex: 1;
+  max-width:300px;
 }
 
 a:hover {
